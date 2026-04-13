@@ -40,6 +40,10 @@ function App() {
 
         <button>Нажми меня</button>
       </Card>
+      <Card>
+        <h2>Пост</h2>
+        <p>Какой-то текст</p>
+      </Card>
       <hr />
       <PageLayout
         header={<nav>Моё приложение</nav>}

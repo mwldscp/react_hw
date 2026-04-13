@@ -1,11 +1,12 @@
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 interface CardProps {
   children: ReactNode;
 }
 
 export function Card({ children }: CardProps) {
-  return (
+  const [likes, setLikes] = useState<number>(0);
+    return (
     <div
       style={{
         display: "flex",
@@ -18,6 +19,7 @@ export function Card({ children }: CardProps) {
       }}
     >
       {children}
+      <button onClick={()=>{setLikes((prev)=> prev +1)}}>❤️ Лайк <span>{likes}</span></button>
     </div>
   );
 }
