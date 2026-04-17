@@ -1,6 +1,7 @@
 import "./App.css";
 import { Card } from "./components/Card";
 import { PageLayout } from "./components/PageLayout";
+import { Timer } from "./components/timer/Timer";
 import { TodoList } from "./components/todo/TodoList";
 import { UserCard } from "./components/UserCard";
 
@@ -57,6 +58,8 @@ function App() {
       />
       <hr />
       <TodoList tasks={tasks} />
+      <hr />
+      <Timer/>
     </div>
   );
 }
