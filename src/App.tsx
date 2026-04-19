@@ -1,5 +1,6 @@
 import "./App.css";
 import { Card } from "./components/Card";
+import { CustomCard } from "./components/customCards/CustomCard";
 import { PageLayout } from "./components/PageLayout";
 import { Timer } from "./components/timer/Timer";
 import { TodoList } from "./components/todo/TodoList";
@@ -60,6 +61,17 @@ function App() {
       <TodoList tasks={tasks} />
       <hr />
       <Timer/>
+      <hr />
+      <CustomCard type="horizontal">
+        <h2>MacBook Pro 16</h2>
+        <img src="https://i.ebayimg.com/images/g/EGUAAOSwSWhjxdjA/s-l1200.jpg" alt="MacBook Pro 16" />
+        <p>MacBook Pro 16 — это флагманский ноутбук Apple для профессионалов с 16,2-дюймовым дисплеем Liquid Retina XDR (3456×2234), высокой автономностью (до 22 часов) и мощными чипами Apple Silicon. </p>
+      </CustomCard>
+      <CustomCard type="vertical">
+        <h2>IPhone 17 Pro Max</h2>
+        <img src="https://static.re-store.ru/promo/apple/iphone-17-pro/images/design.png" alt="IPhone 17 Pro Max" />
+        <p>iPhone 17 Pro Max (2025) — флагман с 6,9-дюймовым OLED-экраном (120 Гц, Super Retina XDR), процессором Apple A19 Pro, 12 ГБ ОЗУ и улучшенной системой из трех камер по 48 Мп.</p>
+      </CustomCard>
     </div>
   );
 }
